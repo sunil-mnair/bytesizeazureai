@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/detect_language" method="post">
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text"></textarea>
+  </div>
+     <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    <h1>Output</h1>
+    <p>Update the EndPoint and Subscription Key</p>
+    {% if sentiment %}
+    <p>Check the Terminal Console for the Sentiment Analysis and Key Phrases of the input text</p>
+    {% endif %}
+{% endblock %}

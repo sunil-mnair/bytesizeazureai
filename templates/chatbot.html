@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Chatbot - {{ display }}</h1>
+<p>Provide the Secret Key or Generate a Token from the Bot Service on Azure</p>
+
+
+<!-- With Secret Key -->
+<iframe src="https://webchat.botframework.com/embed/LangaugeService01-bot?s=SECRET_KEY_HERE" style="min-width: 400px; width: 100%; min-height: 500px;">
+</iframe>
+
+<!-- With Token -->
+<!-- <iframe src="https://webchat.botframework.com/embed/LangaugeService01-bot?t=GENERATED_TOKEN" style="min-width: 400px; width: 100%; min-height: 500px;">
+</iframe> -->
+{% endblock %}
